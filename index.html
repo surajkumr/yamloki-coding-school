@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yamloki Coding Room</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" />
+  <meta name="description" content="Yamloki Coding Room – Learn coding from experts with real-world experience." />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+  <nav>
+    <div class="nav1">
+      <img src="https://ik.imagekit.io/sheryians/light-logo_lNzGXRRlQ.png" alt="Yamloki Logo" />
+      <h3>Yamloki <br />Coding Room</h3>
+    </div>
+
+    <div class="nav2" id="mobileMenu">
+      <h4>Home</h4>
+      <h4>Courses</h4>
+      <h4 class="cohort">Cohort 2.0</h4>
+      <h4>Request Callback</h4>
+      <button class="sign_btn">Sign In</button>
+    </div>
+
+    <div class="nav3" onclick="toggleMenu()">
+      <h4><i class="ri-menu-3-fill"></i></h4>
+    </div>
+  </nav>
+
+
+  <main class="main-heading">
+    <h1>
+      We only <span class="text-highlight">teach</span><br />
+      <span class="center-line">what we are really</span><br />
+      <span class="really-line2">really</span> <span class="italic">good</span> at.
+    </h1>
+    <button class="check-Courses">Check Courses</button>
+  </main>
+</body>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("active");
+  }
+
+  document.querySelectorAll("#mobileMenu h4").forEach(item => {
+    item.addEventListener("click", () => {
+      document.getElementById("mobileMenu").classList.remove("active");
+    });
+  });
+</script>
+
+</html>
