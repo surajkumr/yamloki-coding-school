@@ -1,0 +1,15 @@
+:root{
+	--brand: #24cfa6;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+	@apply bg-gradient-to-br from-black to-teal-800 text-white font-sans min-h-screen;
+}
+
+a{ @apply text-white no-underline }
+
+.check-Courses{ @apply bg-[var(--brand)] text-black px-4 py-2 rounded-lg }

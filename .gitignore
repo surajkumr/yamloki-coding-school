@@ -1,0 +1,19 @@
+# Node
+node_modules/
+npm-debug.log
+
+# env
+server/.env
+frontend/.env.local
+
+# Next.js build
+frontend/.next/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
+
+# logs
+logs/
+*.log
